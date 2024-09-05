@@ -1,0 +1,99 @@
+# Git commands {#git-commands}
+
+A collection of some of the Git commands that have been largely going on under the hood.
+We've emphasized early workflows that are possible in RStudio.
+But all of this and much more can be done from the command line.
+This list is here mostly so we can consult it during live workshops if needed.
+
+*Unless you use the [GitHub API](https://developer.github.com/v3/), most of the GitHub bits really have to be done from the browser.*
+
+New local git repo from a repo on GitHub:
+
+```console
+git clone https://github.com/jennybc/happy-git-with-r.git
+```
+
+Check the remote was cloned successfully:
+
+```console
+git remote --verbose
+```
+
+Stage local changes, commit:
+
+```console
+git add foo.txt
+git commit --message "A commit message"
+```
+
+Check on the state of the Git world:
+
+```console
+git status
+git log
+git log --oneline
+```
+
+Compare versions:
+
+```console
+git diff
+```
+
+Add a remote to existing local repo:
+
+```console
+git remote add origin https://github.com/jennybc/happy-git-with-r
+git remote --verbose
+git remote show origin
+```
+
+Push local `main` to GitHub `main` and have local `main` track `main` on GitHub:
+
+```console
+git push --set-upstream origin main
+# shorter form
+git push -u origin main
+# you only need to set upstream tracking once!
+```
+
+Regular push:
+
+```console
+git push 
+# the above usually implies (and certainly does in our tutorial)
+git push origin main
+# git push [remote-name] [branch-name]
+```
+
+Pull commits from GitHub:
+
+```console
+git pull
+```
+
+Pull commits and don't let it put you in a merge conflict pickle:
+
+```console
+git pull --ff-only
+```
+
+Fetch commits
+
+```console
+git fetch
+```
+
+Switch to a branch
+
+```console
+git checkout [branch-name]
+```
+
+Checking remote and branch tracking
+
+```console
+git remote -v
+git remote show origin
+git branch -vv
+```

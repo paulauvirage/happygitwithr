@@ -1,0 +1,25 @@
+# Resources {#resources}
+
+We practice what we preach! This site is created with Git and R markdown, using the [`bookdown`](https://github.com/rstudio/bookdown/) package. Go ahead and [peek behind the scenes](https://github.com/jennybc/happy-git-with-r).
+
+Long-term, you should understand more about what you are doing. Rote clicking in RStudio may be a short-term survival method but won't work for long.
+
+  * [Git for Humans](https://speakerdeck.com/alicebartlett/git-for-humans) is a great set of slides by [Alice Bartlett](https://alicebartlett.co.uk), originally delivered in 2016 at UX Brighton.
+
+  * [Git in Practice](https://www.manning.com/books/git-in-practice) by Mike McQuaid is an more approachable book, probably better than Pro Git (below) for most people starting out. Ancillary materials [on GitHub](https://github.com/MikeMcQuaid/GitInPractice).
+
+  * The book [Pro Git](http://git-scm.com/book) is fantastic and comprehensive.
+
+  * [Oh My Git!](https://ohmygit.org/) is a free and open source interactive game for learning Git. It's very beginner friendly, using a graph to visualise the worktree. Lessons can be completed using a playing card interface in addition to the built-in command line, which is there for when users become more comfortable.
+
+  * [GitHub's own training materials](https://training.github.com) may be helpful. They also point to [many other resources](https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github)
+
+  * Find a powerful Git client (chapter \@ref(git-client)) if you'd like to minimize your usage of Git from the command line.
+  
+  * Ten Simple Rules for Taking Advantage of Git and GitHub <http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947>
+
+  * RStudio's guide [Version Control with Git and SVN](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+  
+  * The book *[Team Geek](http://shop.oreilly.com/product/0636920018025.do)* has insightful advice for the human and collaborative aspects of version control.  It proposes Git strategies suited to different characteristics of teams.
+
+`r if (knitr:::is_html_output()) '# References'`
